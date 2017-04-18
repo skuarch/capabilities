@@ -1,0 +1,11 @@
+<app-top-navigation></app-top-navigation>
+<app-messages [errorMessage]='errorMessage' [infoMessage]='infoMessage'></app-messages>
+<div *ngIf="capabilities"> 
+  <div *ngFor="let capability of capabilities">
+    {{capability.name}}
+  </div>
+</div>
+<div *ngIf="!capabilities"> 
+  no capabilities to show
+</div>
+

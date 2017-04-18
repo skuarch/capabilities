@@ -1,0 +1,15 @@
+<app-top-navigation></app-top-navigation>
+<app-messages [errorMessage]='errorMessage' [infoMessage]='infoMessage'></app-messages>
+<p>
+  create-capability
+</p>
+capability name <br>
+<input type="text" [(ngModel)]="capability.name">
+<br/>
+capability url <br> 
+<input type="text" [(ngModel)]="capability.uri">
+<br>
+<br>
+<button (click)="saveCapability()">
+  save capability
+</button>
